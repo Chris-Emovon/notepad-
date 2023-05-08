@@ -1,0 +1,39 @@
+.backbutton {
+    font-size: 3rem;
+}
+.backbutton:active {
+    transform: scale(1,1.1);
+}
+.notearea {
+    width: 80%;
+    box-shadow: 10px 10px 8px grey;
+    margin-top: 4rem;
+    border-width: 0;
+}
+.notearea:focus {
+    outline: none;
+}
+.notearea:active {
+    border: 1px solid  black;
+    box-shadow: 10px 10px 5px grey;
+}
+#newnote::placeholder {
+    font-style: italic;
+}
+i {
+    color: black;
+}
+
+.btn:active {
+    position: fixed;
+    scale: 1rem;
+    transform: scale(1,1.2);
+}
+span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+h2 {
+    font-size: 5rem;
+}
+
