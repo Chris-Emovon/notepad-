@@ -49,6 +49,6 @@ h3 {
     background-color: lightblue;
     border-radius: 7ch;
 }
-.deletenote {
+#deletenote {
     width: 1.6rem;
 }

@@ -19,11 +19,11 @@ export const MyProvider = ({ children }) => {
           setNotes(updateNotes)
         }
 
-        const saveData = (data) => {
-          const myNotes = notes;
+        
+          const myNotes = [...notes]
           localStorage.setItem("notesTaken", JSON.stringify(myNotes))
           const getNotes = JSON.parse(localStorage.getItem("notesTaken"))
-        }
+        
         
        
            
