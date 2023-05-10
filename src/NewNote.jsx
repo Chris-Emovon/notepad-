@@ -21,6 +21,8 @@ const NewNote = () => {
           setNoteContent('');
         }
       };
+
+      const [noteTitle, setNoteTitle] = useState("");
       
     
     return ( 
@@ -29,7 +31,7 @@ const NewNote = () => {
             
             <h2 className=" mx-auto d-flex justify-content-center text-primary"><img src={blanknoteicon} style={{width: '7rem'}}/></h2>
             <form onSubmit={handleSubmit}>
-                <textarea type="text" value={noteContent} onChange={(e) => setNoteContent(e.target.value)} className="notearea border-0 rounded mx-auto d-flex justify-content-center align-items-center" rows="12" col="70s" id="newnote" placeholder="Enter your note here"></textarea>
+                <textarea type="text" value={noteContent} onChange={(e) => setNoteContent(e.target.value)} className="notearea border-0 rounded mx-auto d-flex justify-content-center align-items-center" rows="12" col="70" id="newnote" placeholder="Enter your note here"></textarea>
                 
                 <p className="d-flex justify-content-center mt-5">
                     <button type="submit" className="btn btn-lg btn-dark px-5"><span>Add Note</span></button>

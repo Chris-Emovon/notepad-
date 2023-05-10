@@ -9,8 +9,8 @@ export const MyProvider = ({ children }) => {
     const [notes, setNotes] = useState([])
 
     const addNote = (content) => {
-        setNotes([...notes, { id: uuidv4(), content }]);
-    };
+      setNotes([...notes, { id: uuidv4(), content }]);
+  };
 
 
     

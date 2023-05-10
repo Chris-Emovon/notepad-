@@ -36,4 +36,14 @@ span {
 h2 {
     font-size: 5rem;
 }
-
+.notetitle {
+    width: 20rem;
+    box-shadow: 10px 10px 8px grey;
+}
+#title::placeholder {
+    font-style: italic;
+    align-items: center;
+}
+.notetitle:focus {
+    outline: none;
+}

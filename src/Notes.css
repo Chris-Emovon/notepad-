@@ -52,3 +52,7 @@ h3 {
 #deletenote {
     width: 1.6rem;
 }
+.read:active {
+    visibility: hidden;
+    
+}

@@ -24,13 +24,15 @@ const Notes = () => {
 
             {notes.length === 0 ? 
             <div className="d-flex justify-content-center mt-5">
-                <div><img style={{width: '25rem'}} src={casual} /></div><br /> 
+                <div><img style={{width: '20rem'}} src={casual} /></div><br /> 
                 <h4 className="d-flex justify-content-center mt-5 ">You don't have any notes yet click <br /> the plus icon to create a new note</h4> </div>:
             notes.map((note) => (
                 <div key={note.id} className="card">
                     <div className="card-body">
-                        <p className="card-text">{note.content.substring(0,50)}...</p>
+                        <h5 className="card-title">{note.title}</h5>
+                        <p className="card-text">{note.content.substring(0,35)}...</p>
                     </div>
+                    <button className="read btn btn-xs btn-dark mx-4 my-3 bg-primary border-0">Read</button>
                     
                     
                     <h5>
