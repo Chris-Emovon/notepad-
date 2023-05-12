@@ -2,6 +2,7 @@ import React, { createContext, useState } from 'react';
 import { useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid'
 
+
 export const MyContext = createContext();
 
 export const MyProvider = ({ children }) => {
@@ -19,10 +20,14 @@ export const MyProvider = ({ children }) => {
           setNotes(updateNotes)
         }
 
-        
-          const myNotes = [...notes]
-          localStorage.setItem("notesTaken", JSON.stringify(myNotes))
-          const getNotes = JSON.parse(localStorage.getItem("notesTaken"))
+        useEffect(() => {
+          const storedNotes = localStorage.getItem("notes");
+          setNotes(storedNotes ? JSON.parse(storedNotes) : []);
+        }, []);
+      
+        useEffect(() => {
+          localStorage.setItem("notes", JSON.stringify(notes));
+        }, [notes]);
         
         
        

@@ -27,12 +27,12 @@ const Notes = () => {
                 <div><img style={{width: '20rem'}} src={casual} /></div><br /> 
                 <h4 className="d-flex justify-content-center mt-5 ">You don't have any notes yet click <br /> the plus icon to create a new note</h4> </div>:
             notes.map((note) => (
-                <div key={note.id} className="card">
+                <div key={note.id} className="card border-0">
                     <div className="card-body">
                         <h5 className="card-title">{note.title}</h5>
                         <p className="card-text">{note.content.substring(0,35)}...</p>
                     </div>
-                    <button className="read btn btn-xs btn-dark mx-4 my-3 bg-primary border-0">Read</button>
+                    <Link to={`/Notepage/${note.id}`}><button className="read d-flex justify-content-center btn btn-xs btn-dark mx-4 my-3 bg-primary border-0">Read More</button></Link>
                     
                     
                     <h5>

@@ -5,6 +5,11 @@ import Notes from './Notes'
 import NewNote from './NewNote'
 import { BrowserRouter as Router, 
 Route, Routes, Link } from "react-router-dom";
+import preview from './Notepage'
+import Notepreview from './Notepage'
+import Notepage from './Notepage'
+
+
 
 function App() {
   
@@ -20,6 +25,7 @@ function App() {
                 </div>
               }></Route>
               <Route path="/NewNote" element={<NewNote />}></Route>
+              <Route path="/Notepage" element={<Notepage />} />
             </Routes>
           </div>
     </Router>

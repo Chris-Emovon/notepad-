@@ -5,6 +5,7 @@
     margin-left: 1rem;
     margin-right: 1rem;
     float: left;
+    box-shadow: 0 0 10px grey;
 }
 .addnote {
     font-size: 3rem;
@@ -52,7 +53,7 @@ h3 {
 #deletenote {
     width: 1.6rem;
 }
-.read:active {
+/*.read:active {
     visibility: hidden;
     
 }
